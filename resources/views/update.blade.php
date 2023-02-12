@@ -16,28 +16,28 @@
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama" placeholder="Masukkan nama anda" value="{{$karyawan->nama}}">
             </div>
             @error('nama')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{$message}}</div>
             @enderror
             <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Umur</label>
             <input type="number" class="form-control" name="umur" placeholder="Masukkan umur anda" value="{{$karyawan->umur}}">
             </div>
             @error('umur')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{$message}}</div>
             @enderror
             <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Alamat</label>
             <textarea type="text" class="form-control" name="alamat" placeholder="Masukkan alamat anda" value="{{$karyawan->alamat}}">{{$karyawan->alamat}}</textarea>
             </div>
             @error('alamat')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{$message}}</div>
             @enderror
             <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nomor telepon</label>
             <input type="tel" class="form-control" name="no_telp" placeholder="Masukkan nomor telepon anda" value="{{$karyawan->no_telp}}">
             </div>
             @error('no_telp')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <div class="alert alert-danger">{{$message}}</div>
             @enderror
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
