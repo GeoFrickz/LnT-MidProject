@@ -19,12 +19,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('update');
 // });
 
-Route::get('/karyawan',[DashboardController::class, 'getKaryawanPage'])->name('karyawanPage');
+Route::get('/',[DashboardController::class, 'getKaryawanPage'])->name('karyawanPage');
 
-Route::get('/karyawan/add',[KaryawanController::class, 'getAddKaryawan'])->name('addKaryawanPage');
-Route::post('/karyawan/add',[KaryawanController::class, 'addKaryawan'])->name('addKaryawan');
+Route::get('/add',[KaryawanController::class, 'getAddKaryawan'])->name('addKaryawanPage');
+Route::post('/add',[KaryawanController::class, 'addKaryawan'])->name('addKaryawan');
 
-Route::get('/karyawan/update/{id}',[KaryawanController::class, 'getUpdateKaryawan'])->name('getUpdatePage');
-Route::patch('/karyawan/update/{id}',[KaryawanController::class, 'updateKaryawan'])->name('updateKaryawan');
+Route::get('/update/{id}',[KaryawanController::class, 'getUpdateKaryawan'])->name('getUpdatePage');
+Route::patch('/update/{id}',[KaryawanController::class, 'updateKaryawan'])->name('updateKaryawan');
 
-Route::delete('/karyawan/delete/{id}',[KaryawanController::class, 'deleteKaryawan'])->name('deleteKaryawan');
+Route::delete('/delete/{id}',[KaryawanController::class, 'deleteKaryawan'])->name('deleteKaryawan');
